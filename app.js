@@ -43,8 +43,10 @@ function engineLine() {
 
 // ── 내 파일로 — 엑셀 · CSV 를 이 브라우저 안에서 표로 올린다 ─────────────
 // 파일 이름에 questions.json 의 files[].match 가 들어 있으면 그 표를 대신한다.
+// 맥은 파일 이름의 한글을 자모로 쪼개(NFD) 넘긴다 — 붙인 꼴(NFC)로 맞춘 뒤 비교한다
 function tableFor(name) {
-  const hit = S.files.find(f => name.includes(f.match));
+  const n = name.normalize("NFC");
+  const hit = S.files.find(f => n.includes(f.match.normalize("NFC")));
   return hit ? hit.table : null;
 }
 
