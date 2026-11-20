@@ -1,6 +1,6 @@
 {
   "title": "준비해 둔 질문",
-  "owner": "질문과 SQL은 사람이 골랐습니다. «확인할 값»은 20_데이터/실측결과.md 에서 옵니다. 마지막 두 질문(plan_churn · ticket_churn)은 김유민이 골랐고, 그 «확인할 값»은 edata9-data 로 돌려서 얻었습니다.",
+  "owner": "질문과 SQL은 사람이 골랐습니다. «확인할 값»은 20_데이터/실측결과.md 에서 옵니다. 마지막 두 질문(plan_churn · ticket_churn)은 져미가 골랐고, 그 «확인할 값»은 edata9-data 로 돌려서 얻었습니다.",
   "files": [
     { "match": "상담내역", "table": "support_tickets" },
     { "match": "고객목록", "table": "customers" },
